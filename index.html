@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vansh Kumar | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-logo"><a href="#hero">vansh<span>kumar</span></a></div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- FLOATING SOCIAL SIDEBAR (Desktop) -->
+    <div class="social-sidebar">
+        <a href="https://github.com/Vansh-gupta01"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-gamepad"></i></a>
+        <a href="https://www.linkedin.com/in/vansh-kumar-5b422a322/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:vanshgupta3542@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <!-- Main Hero Naming Section -->
+    <header id="hero" class="main-hero section-padding">
+        <h1 class="hero-name reveal" data-text="Vansh Kumar">Vansh Kumar</h1>
+        <h2 class="hero-roles reveal delay-1"><span class="role-text" id="typewriter">Game Designer</span><span
+                class="cursor-blink">_</span></h2>
+
+        <div class="hero-actions reveal delay-2">
+            <a href="#projects" class="btn btn-fill">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="hero-stats reveal delay-3">
+            <div class="stat-item">
+                <span class="stat-number" data-target="6">0</span>
+                <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="2">0</span>
+                <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="1">0</span>
+                <span class="stat-label">Game Released</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Timeline Section -->
+    <section class="timeline-hero">
+        <div class="center-line"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section-padding">
+        <h2 class="section-label reveal">01. About Me</h2>
+        <div class="about-grid">
+            <div class="about-text-content reveal">
+                <p class="about-text">
+                    I'm Vansh Kumar — a <span>Game Developer</span> and <span>Graphic Designer</span> pursuing B.Tech in
+                    Computer Science at GRD Institute, Dehradun. I build AI-powered desktop apps, self-hosted servers,
+                    and games — combining low-level systems programming with a creative design eye.
+                </p>
+            </div>
+            <div class="about-image-wrapper reveal delay-1">
+                <!-- Replace 'my-photo.jpg' with the actual filename of your inserted photo -->
+                <img src="my-photo.jpg" alt="Vansh Kumar" class="about-image"
+                    onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Vansh+Kumar&background=1ABC9C&color=fff&size=500';">
+            </div>
+        </div>
+
+        <div class="logos-strip reveal delay-2">
+            <span class="logos-title">I have worked in</span>
+            <span class="company-logo">CodSoft</span>
+            <span class="company-logo">Slog Solution</span>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience section-padding">
+        <h2 class="section-label reveal">02. Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-date">Aug 2024 – Sep 2024</div>
+                <h3 class="timeline-title">C++ Developer Intern</h3>
+                <div class="timeline-company">CodSoft</div>
+                <p class="timeline-desc">4-week virtual internship focused on hands-on C++ development.</p>
+                <a href="#" class="btn" style="padding: 10px 20px; font-size: 0.8rem;">View Details</a>
+            </div>
+
+            <div class="timeline-item reveal delay-1">
+                <div class="timeline-date">Jun 2024 – Jul 2024</div>
+                <h3 class="timeline-title">Graphic Design Intern</h3>
+                <div class="timeline-company">Slog Solution Pvt. Ltd.</div>
+                <p class="timeline-desc">Learned Photoshop and Premiere Pro in a one-month remote internship.</p>
+                <a href="#" class="btn" style="padding: 10px 20px; font-size: 0.8rem;">View Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section-padding">
+        <h2 class="section-label reveal">03. Selected Projects</h2>
+
+        <div class="projects-grid">
+            <!-- Project A -->
+            <div class="project-card reveal">
+                <div>
+                    <div class="project-tag">Personal Project · 2025</div>
+                    <h3 class="project-title">Bhaskara AI</h3>
+                    <p class="project-desc">Offline multimodal AI assistant with speech, vision, and text.</p>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">Mistral-7B</span>
+                    <span class="stack-tag">Standard Diffusion</span>
+                    <span class="stack-tag">PySide6</span>
+                </div>
+                <div class="project-overlay">
+                    <a href="#" class="btn btn-fill">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project B -->
+            <div class="project-card reveal delay-1">
+                <div>
+                    <div class="project-tag">Personal Project · 2024</div>
+                    <h3 class="project-title">Multimodal Translator</h3>
+                    <p class="project-desc">Desktop translator supporting text, speech, and image input.</p>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">Tesseract OCR</span>
+                    <span class="stack-tag">Pyttsx3</span>
+                    <span class="stack-tag">PySide6</span>
+                </div>
+                <div class="project-overlay">
+                    <a href="#" class="btn btn-fill">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project C -->
+            <div class="project-card reveal delay-2">
+                <div>
+                    <div class="project-tag">Personal Project · 2025</div>
+                    <h3 class="project-title">Pi Mini Server</h3>
+                    <p class="project-desc">Portable self-hosted home server with Docker and Portainer.</p>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">Docker</span>
+                    <span class="stack-tag">Portainer</span>
+                    <span class="stack-tag">Jellyfin</span>
+                </div>
+                <div class="project-overlay">
+                    <a href="#" class="btn btn-fill">View Details</a>
+                </div>
+            </div>
+
+            <!-- Project D -->
+            <div class="project-card reveal">
+                <div>
+                    <div class="project-tag">2D Game · 2026</div>
+                    <h3 class="project-title">Robot-Quest</h3>
+                    <p class="project-desc">2D game with collision, game states, and OOP architecture.</p>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">C++</span>
+                    <span class="stack-tag">OOP</span>
+                    <span class="stack-tag">State Machine</span>
+                </div>
+                <div class="project-overlay">
+                    <a href="#" class="btn btn-fill">View Details</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section-padding">
+        <h2 class="section-label reveal">04. Skills</h2>
+
+        <div class="skills-container">
+            <div class="skills-col reveal">
+                <h3 class="skills-title">Technical Skills</h3>
+
+                <div class="skills-group">
+                    <div class="skill-item">
+                        <span class="skill-name">Languages</span>
+                        <span class="skill-desc">C++, Python, C#, Java, HTML/CSS/JS</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AI / ML</span>
+                        <span class="skill-desc">Mistral-7B, Stable Diffusion, Tortoise TTS, OCR, NLP, PyTorch,
+                            OpenCV</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Tools & DevOps</span>
+                        <span class="skill-desc">PySide6/Qt, Docker, Git, Portainer, Terraform, GitHub Actions</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Game Dev</span>
+                        <span class="skill-desc">Unreal Engine 5, Blender, Game Design, C++ Game Loop</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-col reveal delay-1">
+                <h3 class="skills-title">Design & Soft Skills</h3>
+
+                <div class="skills-group">
+                    <div class="skill-item">
+                        <span class="skill-name">Creative</span>
+                        <span class="skill-desc">Graphic Design, Photoshop, Premiere Pro</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Mindset</span>
+                        <span class="skill-desc">Self-Hosting & DevOps mindset</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Professional</span>
+                        <span class="skill-desc">Time Management, Problem Solving, Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education section-padding">
+        <h2 class="section-label reveal">05. Education</h2>
+
+        <div class="edu-list">
+            <div class="edu-item reveal">
+                <div>
+                    <h3 class="edu-degree">B.Tech Computer Science</h3>
+                    <div class="edu-school">GRD Institute, Dehradun</div>
+                </div>
+                <div class="edu-year">2025–2028</div>
+            </div>
+
+            <div class="edu-item reveal delay-1">
+                <div>
+                    <h3 class="edu-degree">B.Tech Computer Software Engineering</h3>
+                    <div class="edu-school">UTU</div>
+                </div>
+                <div class="edu-year">2025–2028</div>
+            </div>
+
+            <div class="edu-item reveal delay-2">
+                <div>
+                    <h3 class="edu-degree">Diploma in Comp. Science</h3>
+                    <div class="edu-school">GRD Institute</div>
+                </div>
+                <div class="edu-year">2022–2025</div>
+            </div>
+
+            <div class="edu-item reveal delay-3">
+                <div>
+                    <h3 class="edu-degree">Certificate: Graphic Designing Training</h3>
+                    <div class="edu-school">Various</div>
+                </div>
+                <div class="edu-year">Completed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section-padding">
+        <h2 class="section-label reveal">06. Contact</h2>
+
+        <div class="reveal">
+            <h2>Let's Work Together</h2>
+            <a href="mailto:vanshgupta3542@gmail.com" class="contact-email">vanshgupta3542@gmail.com</a>
+        </div>
+
+        <form class="contact-form reveal delay-1">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-fill" style="width: 100%; margin-top: 1rem;">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-name">VANSH KUMAR</div>
+        <div class="footer-copy">© 2025–2026 Vansh Kumar. All rights reserved.</div>
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fas fa-gamepad"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>
