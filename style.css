@@ -383,9 +383,10 @@
         .about-image-wrapper {
             position: relative;
             width: 100%;
-            max-width: 450px;
+            max-width: 400px;
             margin: 0 auto;
             aspect-ratio: 1/1;
+            justify-self: center;
         }
 
         .about-image {
