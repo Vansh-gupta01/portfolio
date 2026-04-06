@@ -112,7 +112,11 @@
                 <h3 class="timeline-title">C++ Developer Intern</h3>
                 <div class="timeline-company">CodSoft</div>
                 <p class="timeline-desc">4-week virtual internship focused on hands-on C++ development.</p>
-                <a href="#" class="btn" style="padding: 10px 20px; font-size: 0.8rem;">View Details</a>
+                <button class="btn open-modal-btn" style="padding: 10px 20px; font-size: 0.8rem;" 
+                    data-title="C++ Developer Intern" 
+                    data-company="CodSoft" 
+                    data-date="Aug 2024 – Sep 2024" 
+                    data-desc="4-week virtual internship focused on hands-on C++ development. Developed multiple projects including a number guessing game, a simple calculator, and a tic-tac-toe game. Gained practical experience in object-oriented programming, memory management, and algorithmic logic.">View Details</button>
             </div>
 
             <div class="timeline-item reveal delay-1">
@@ -120,7 +124,11 @@
                 <h3 class="timeline-title">Graphic Design Intern</h3>
                 <div class="timeline-company">Slog Solution Pvt. Ltd.</div>
                 <p class="timeline-desc">Learned Photoshop and Premiere Pro in a one-month remote internship.</p>
-                <a href="#" class="btn" style="padding: 10px 20px; font-size: 0.8rem;">View Details</a>
+                <button class="btn open-modal-btn" style="padding: 10px 20px; font-size: 0.8rem;"
+                    data-title="Graphic Design Intern"
+                    data-company="Slog Solution Pvt. Ltd."
+                    data-date="Jun 2024 – Jul 2024"
+                    data-desc="Learned Photoshop and Premiere Pro in a one-month remote internship. Created promotional banners, social media graphics, and edited video content for marketing campaigns. Improved visual communication skills and proficiency with Adobe Creative Cloud applications.">View Details</button>
             </div>
         </div>
     </section>
@@ -143,15 +151,16 @@
                     <span class="stack-tag">PySide6</span>
                 </div>
                 <div class="project-overlay">
-                    <a href="https://github.com/Vansh-gupta01" class="btn btn-fill" target="_blank">View Details</a>
+                    <a href="https://github.com/Vansh-gupta01/Bhaskara-AI" class="btn btn-fill" target="_blank">View
+                        Details</a>
                 </div>
             </div>
 
             <!-- Project B -->
             <div class="project-card reveal delay-1">
                 <div>
-                    <div class="project-tag">Personal Project · 2024</div>
-                    <h3 class="project-title">Multimodel-Language-Translator</h3>
+                    <div class="project-tag">Personal Project · 2025</div>
+                    <h3 class="project-title">Multimodel Language Translator</h3>
                     <p class="project-desc">Desktop translator supporting text, speech, and image input.</p>
                 </div>
                 <div class="project-stack">
@@ -169,7 +178,7 @@
             <div class="project-card reveal delay-2">
                 <div>
                     <div class="project-tag">Personal Project · 2025</div>
-                    <h3 class="project-title">Pi Mini Server</h3>
+                    <h3 class="project-title">Portable Mini Server</h3>
                     <p class="project-desc">Portable self-hosted home server with Docker and Portainer.</p>
                 </div>
                 <div class="project-stack">
@@ -178,7 +187,8 @@
                     <span class="stack-tag">Jellyfin</span>
                 </div>
                 <div class="project-overlay">
-                    <a href="https://github.com/Vansh-gupta01" class="btn btn-fill" target="_blank">View Details</a>
+                    <a href="https://github.com/Vansh-gupta01/raspberry-pi-mini-server" class="btn btn-fill"
+                        target="_blank">View Details</a>
                 </div>
             </div>
 
@@ -190,12 +200,14 @@
                     <p class="project-desc">2D game with collision, game states, and OOP architecture.</p>
                 </div>
                 <div class="project-stack">
-                    <span class="stack-tag">C++</span>
+                    <span class="stack-tag">Python</span>
+                    <span class="stack-tag">Pygame</span>
                     <span class="stack-tag">OOP</span>
                     <span class="stack-tag">State Machine</span>
                 </div>
                 <div class="project-overlay">
-                    <a href="https://github.com/Vansh-gupta01" class="btn btn-fill" target="_blank">View Details</a>
+                    <a href="https://github.com/Vansh-gupta01/Robot-Quest" class="btn btn-fill" target="_blank">View
+                        Details</a>
                 </div>
             </div>
 
@@ -261,23 +273,15 @@
             <div class="edu-item reveal">
                 <div>
                     <h3 class="edu-degree">B.Tech Computer Science</h3>
-                    <div class="edu-school">GRD Institute, Dehradun</div>
-                </div>
-                <div class="edu-year">2025–2028</div>
-            </div>
-
-            <div class="edu-item reveal delay-1">
-                <div>
-                    <h3 class="edu-degree">B.Tech Computer Software Engineering</h3>
-                    <div class="edu-school">UTU</div>
+                    <div class="edu-school">VEER MADHO SINGH BHANDARI UTTARAKHAND TECHNICAL UNIVERSITY</div>
                 </div>
                 <div class="edu-year">2025–2028</div>
             </div>
 
             <div class="edu-item reveal delay-2">
                 <div>
-                    <h3 class="edu-degree">Diploma in Comp. Science</h3>
-                    <div class="edu-school">GRD Institute</div>
+                    <h3 class="edu-degree">Diploma in Computer Science</h3>
+                    <div class="edu-school">UTTERAKHAND BOARD OF TECHNICAL EDUCATION ROORKEE</div>
                 </div>
                 <div class="edu-year">2022–2025</div>
             </div>
@@ -325,6 +329,17 @@
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </footer>
+
+    <!-- EXPERIENCE MODAL -->
+    <div id="experience-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+            <h3 class="modal-title" id="modal-title">Role</h3>
+            <div class="modal-company" id="modal-company">Company</div>
+            <div class="modal-date" id="modal-date">Date</div>
+            <p class="modal-desc" id="modal-desc">Description goes here.</p>
+        </div>
+    </div>
 
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>

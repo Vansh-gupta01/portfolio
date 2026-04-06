@@ -95,3 +95,54 @@
                 }
             });
         });
+
+        // EXPERIENCE MODAL LOGIC
+        const modal = document.getElementById('experience-modal');
+        const modalClose = document.querySelector('.modal-close');
+        const openModalBtns = document.querySelectorAll('.open-modal-btn');
+        
+        const modalTitle = document.getElementById('modal-title');
+        const modalCompany = document.getElementById('modal-company');
+        const modalDate = document.getElementById('modal-date');
+        const modalDesc = document.getElementById('modal-desc');
+
+        if(modal && openModalBtns.length > 0) {
+            openModalBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    // Populate data
+                    modalTitle.textContent = btn.getAttribute('data-title');
+                    modalCompany.textContent = btn.getAttribute('data-company');
+                    modalDate.textContent = btn.getAttribute('data-date');
+                    modalDesc.textContent = btn.getAttribute('data-desc');
+                    
+                    // Show modal
+                    modal.classList.add('active');
+                    // Prevent background scrolling
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            // Close actions
+            const closeModal = () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            };
+
+            modalClose.addEventListener('click', closeModal);
+            
+            // Close on outside click
+            modal.addEventListener('click', (e) => {
+                if(e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if(e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        }
